@@ -1,0 +1,80 @@
+h1{
+    color: red;
+    padding-left: 145px;
+    margin-left: 100px; 
+}
+
+#name{cursor: pointer;
+    color:  #00acee;
+   border-style: solid;
+   border-color:  #000000;
+   border-radius: 30px;
+   padding-top: 20px;
+   padding-left: 145px;
+   padding-right: 145px;
+   margin-top: 20px;
+   margin-left: 100px; 
+   margin-right: 800px; 
+   padding-bottom: 20px;
+  }
+
+#email{cursor: pointer;
+    color:  #00acee;
+   border-style: solid;
+   border-color:  #000000;
+   border-radius: 30px;
+   padding-top: 20px;
+   padding-left: 145px;
+   padding-right: 145px;
+   margin-top: 20px;
+   margin-left: 100px; 
+   margin-right: 800px; 
+   padding-bottom: 20px;
+  }
+
+#password{cursor: pointer;
+    color:  #00acee;
+   border-style: solid;
+   border-color:  #000000;
+   border-radius: 30px;
+   padding-top: 20px;
+   padding-left: 145px;
+   padding-right: 145px;
+   margin-top: 20px;
+   margin-left: 100px; 
+   margin-right: 800px; 
+   padding-bottom: 20px;
+  }
+
+
+
+
+
+
+.signup{cursor: pointer;
+    color:azure ;
+    background-color: #00acee;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-left: 145px;
+    margin-top: 10px;
+    padding-right: 200px;
+    margin-left: 100px; 
+    margin-right: 600px; 
+    padding-bottom: 10px;
+}
+
+
+.login{ cursor: pointer;
+    color:  #00acee;
+   border-style: solid;
+   border-color:  #00acee;
+   border-radius: 30px;
+   padding-top: 10px;
+   padding-left: 145px;
+   padding-right: 400px;
+   margin-top: 20px;
+   margin-left: 100px; 
+   margin-right: 600px; 
+   padding-bottom: 10px;
+   }

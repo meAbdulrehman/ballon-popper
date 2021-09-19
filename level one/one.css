@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    cursor: url(../images/aim.png), text;
+    overflow: hidden;
+}
+
+body:before{
+  content: '';
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url(../images/wall.jpg) repeat-x bottom left;
+}
+
+
+
+@keyframes duckfly{
+       
+    0%{
+        left: 100%;
+        top: 10%
+    }
+
+
+    25%{
+      left: 80%;
+      top: 50%
+  }
+
+
+  50%{
+      left: 50%;
+      top: 30%;
+  }
+
+
+  75%{
+      left: 40%;
+      top: 30%;
+  }
+
+
+
+  100%{
+      left: -1000px;
+      top: 10%
+  }
+}
+
+input + label{
+    position: absolute;
+    left: -100px;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    display: block;
+    z-index: 5;
+    transform: translate();
+    background: url(bally.png) no-repeat left center;
+    background-position: 20px ;
+}
+
+input:checked + label{
+    opacity: 0;
+    transition: 1px; ;
+    transform: rotate(360deg);
+    transform-origin: 60%;
+    z-index: -5;
+}
+
+.duck:nth-last-of-type(1){
+    background: url(red.png);
+    width: 70px;
+    height: 65px;
+    animation: duckfly 5s linear 1s infinite;
+    cursor: url(../images/aim.png), text;
+}
+
+.duck:nth-last-of-type(2){
+    animation: duckfly 5s linear 2s infinite;
+    cursor: url(../images/aim.png), text;
+}
+
+.duck:nth-last-of-type(3){
+    width: 70px;
+    height: 65px;
+    background: url(blue.png);
+    animation: duckfly 5s linear 3s infinite;
+    cursor: url(../images/aim.png), text;
+}
+
+.duck:nth-last-of-type(3){
+    width: 70px;
+    height: 65px;
+    background: url(green.png);
+    animation: duckfly 5s linear 3s infinite;
+    cursor: url(../images/aim.png), text;
+}
+
+.duck:nth-last-of-type(3){
+    background: url(purple.png);
+    width: 62px;
+    height: 60px;
+    
+    animation: duckfly 5s linear 3s infinite;
+    cursor: url(../images/aim.png), text;
+}
+
+
+
+
+.score{
+    color: seashell;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    z-index: 2;
+    font-size: 50px;
+}
+
+.score::after{
+    content: counter(score);
+    display: inline-block;
+}
+
+.score::before{
+    content: 'score: ';
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+input:checked{
+    counter-increment: score;
+}
